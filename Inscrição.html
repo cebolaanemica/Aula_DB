@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+<link  rel="stylesheet" href="style.css" >
+<style>
+    body{
+    background-color:#1a87b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/* checar */
+}
+
+fieldset{
+    border-color: #185a86;
+    border-style: double;
+}
+.elo{
+    height:fit-content;
+    border-style: dashed;
+    border-color: #3b0c92; 
+}
+.espaco{
+    margin: 7px;
+}
+/* configurar */
+
+a{
+    color: inherit;
+}
+/*-------------------------------------  RESOLVER -------------------------------------
+line{
+    width: 400px;
+    height: 20px;
+    border-radius: 10px;
+    box-sizing: 0px 0px 15px #8a0aca, #720707;
+    animation: animate 3s linear infinite;
+    background: linear-gradient(to right, #5d0749, #185a86, #fac606);
+}
+
+@keyframes animate {
+    0%{ filter: hue-rotate(0deg);}
+    100%{ filter: hue-rotate(360deg);}
+} */
+</style>
+</head>
+<body >
+    
+    <h1 align="center">Rodlok</h1>
+<div class="linha"></div>
+<form action="Inscrição.php" method="post" autocomplete="on">
+<fieldset>
+    <fieldset align="center">
+        <legend>Informações Pessoais</legend>
+    
+    
+       <p>
+            <label for="iemail">Email</label><br>
+            <input type="email" name="email" id="iemail" required placeholder="exemplo@exe.com"
+            onchange="this.setCustomValidity(Validity.valueMissing? 'Email invalido, verifique este campo' : '');">
+        <script>
+            document.getElementById("iemail").setCustomValidity("Email invalido, verifique este campo")
+        </script> 
+       </p>
+       <p>
+        <label for="inick">Nome de usuário</label><br>
+        <input type="text" name="nick" id="inick" required minlength="4" maxlength="16" placeholder="nickname" 
+        onchange="this.setCustomValidity(Validity.valueMissing? 'Nick invalido, verifique este campo' : '');">
+        <script>
+            document.getElementById("inick").setCustomValidity("Nick invalido, verifique este campo")
+        </script> 
+    
+    
+    <!-- onchange="this.setCustomValidity('Nick invalido')"  -->
+    <!-- oninvalid="this.setCustomValidity('Por favor, Verifique seu nome de usuário')"  -->
+        </p>
+    
+        <p>
+            <label for="isenha">Senha</label><br>
+            <input type="password" name="senha" id="isenha" required minlength="8" placeholder="senha"
+            onchange="this.setCustomValidity(Validity.valueMissing? 'Senha invalida, verifique este campo' : '');">
+        <script>
+            document.getElementById("isenha").setCustomValidity("Senha ruim, por favor verifique este campo")
+        </script>    
+        </p>
+    
+    
+    </fieldset>
+    <fieldset>
+    <legend>Informações da conta Riot</legend>
+    
+        <p>
+            <label for="irid">Riot ID</label><br>
+            <input type="text" name="rid" id="irid" required minlength="7" maxlength="22" placeholder="XXXXXX#XXXX">
+        </p>
+     <fieldset class="elo">
+    <legend> Elo:</legend>
+    
+         <input type="radio" name="elo" id="iferro">
+         <label for="iferro"> Ferro</label><br>
+         <input type="radio" name="elo" id="ibronze">
+         <label for="ibronze"> Broze</label><br>
+         <input type="radio" name="elo" id="iprata" checked>
+         <label for="iprata"> Prata</label><br>
+         <input type="radio" name="elo" id="iouro">
+         <label for="iouro"> Ouro</label><br>
+         <input type="radio" name="elo" id="iplat">
+         <label for="iplat"> Platina</label><br>
+         <input type="radio" name="elo" id="idima">
+         <label for="idima"> Diamante</label><br>
+         <input type="radio" name="elo" id="imst">
+         <label for="imst"> Mestre</label><br>
+         <input type="radio" name="elo" id="igrao">
+         <label for="igrao"> Grã-Mestre</label><br>
+         <input type="radio" name="elo" id="ides">
+         <label for="ides"> Desafiante</label><br>
+     </fieldset>
+     <!---------------------------------------FAZER UM CHILDREN DE FERRO A DIAMANTE (I A IV)------------------------------------- 
+       ideia: if checked > children. 
+    -->
+    </fieldset>
+    
+    </form>
+    
+   
+    
+      <input class="espaco" type="submit" value="Cadastrar">
+        <input class="espaco" type="reset" value="Limpar">
+        
+        <p><input type="checkbox" name="term" id="iterm" required
+            onchange="this.setCustomValidity(Validity.valueMissing ? 'Por favor autorize a venda dos seus dados ( ͡° ͜ʖ ͡°)' :
+            '');">  Eu autorizo a venda dos meus <a href="Dados.html">Dados</a></p>
+        <script>
+        document.getElementById("iterm").setCustomValidity("Por favor autorize a venda dos seus dados ( ͡° ͜ʖ ͡°)");
+    </script>
+</fieldset>
+</body>
+</html>

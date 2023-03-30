@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario da média</title>
+</head>
+<body>
+       
+    <form action="media.php" method="get">
+        <p >
+            <label>Nota 1:</label>
+            <input type="number" name="nota1" id="inota1" max="10">  
+        </p><br><br>
+
+        <p>
+            <label>Nota 2:</label>
+            <input type="number" name="nota2" id="inota2" max="10">  
+        </p><br><br>   
+        <p>
+            <label>Você concorda com nossos termos de roubo de dados?</label>
+            <input type="checkbox" name="roubo" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        
+            <input type="reset" value="Limpar notas">
+
+
+        </p>
+        </form>
+      
+
+
+</body>
+</html>

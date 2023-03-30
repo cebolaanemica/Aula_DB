@@ -1,0 +1,34 @@
+<link  rel="stylesheet" href="style.css" >
+<style>
+    body{
+    background-color:#146889;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+linha{
+    width: 400px;
+    height: 20px;
+    border-radius: 10px;
+    box-sizing: 0px 0px 15px #8a0aca, #720707;
+    animation: anima 3s linear infinite;
+    background: linear-gradient(to right, #5d0749, #185a86, #fac606);
+}
+
+@keyframes anima {
+    0%{ filter: hue-rotate(0deg);}
+    100%{ filter: hue-rotate(360deg);}
+}
+</style>
+</head>
+<body >
+    
+<div class="linha"></div>
+</body>
+</html>
