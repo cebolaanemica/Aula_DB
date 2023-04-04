@@ -7,12 +7,16 @@
     
     <title>Formulario</title>
     <style>
-        .encap{
+    .encap{
             align-items: center;
             border-style:dashed;
             display:table;
             justify-content: center;
-        }
+    }
+    a{
+        text-decoration:none;
+        color:unset;
+    }
     </style>
 </head>
 
@@ -41,17 +45,17 @@ id: a identificação unica da caixa
 type: o tipo da caixa de entrada
 placeholder: a dica do que escrever na caixa 
 -->
-                 </p>
-                <p>
+    </p>
+    <p>
                 <label for="itelefone">Telefone: </label>
             <input type="tel" name="telefone"
             id="itelefone" placeholder="(xx) xxxxx-xxxx">
-            </p>
-            <p>
+    </p>
+    <p>
                 <label for="idate">Data de nascimento: </label>
                 <input type="date" name="data"
                 id="idate" required>
-            </form> </p>
+    </p>
             <p>
             <label for="icpf">CPF: </label>
                 <input type="text" name="cpf"
@@ -72,18 +76,6 @@ minlength: o minimo de caracteres a ser preenchido na caixa
 maxlength: o máximo ||
 -->
 
-    <p> <input type="checkbox" name="term" id="iterm" required 
-        onchange="this.setCustomValidity(validity.valueMissing ? 'Por favor nos deixe vender seus dados' : '');"
-        > Eu aceito que roubem meus dados</p>
-        <script>
-            document.getElementById("iterm").setCustomValidity("joga uns dados ai namoralzinha")
-        </script> 
-            <p>
-                <input type="submit" value="Cadastrar">
-<!-- O input para enviar os dados -->
-                <input type="reset" value="Limpar">
-<!-- O input para resetar os dados do campo -->
-            </p>
         </fieldset><br>
        
 
@@ -107,9 +99,20 @@ maxlength: o máximo ||
 <label for="igrun" >Grunge</label>
 <input type="checkbox" name="estilo" id="igrun" value="Grunge"><br>
 </fieldset> <p>
-    
-    <input type="submit">
 </p>
+
+    <p> <input type="checkbox" name="term" id="iterm" required 
+        onchange="this.setCustomValidity(validity.valueMissing ? 'Por favor nos deixe vender seus dados' : '');"
+        > Eu aceito que roubem meus dados</p>
+        <script>
+            document.getElementById("iterm").setCustomValidity("joga uns dados ai namoralzinha")
+        </script> 
+    <p>
+                <input type="submit" value="Cadastrar">
+<!-- O input para enviar os dados -->
+                <input type="reset" value="Limpar">
+<!-- O input para resetar os dados do campo -->
+    </p>
     </form>
 
     <p>Olha o <a href="C:\xampp\htdocs\cebola\funcionalidades.html">Batata</a></p>
