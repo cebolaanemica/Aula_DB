@@ -36,6 +36,9 @@ fieldset{
 a{
     color: inherit;
 }
+li{
+    list-style-type:none;
+}
 /*-------------------------------------  RESOLVER -------------------------------------
 line{
     width: 400px;
@@ -102,26 +105,46 @@ line{
             <input type="text" name="rid" id="irid" required minlength="7" maxlength="22" placeholder="XXXXXX#XXXX">
         </p>
      <fieldset class="elo">
-    <legend> Elo:</legend>
-    
-         <input type="radio" name="elo" id="iferro">
-         <label for="iferro"> Ferro</label><br>
-         <input type="radio" name="elo" id="ibronze">
-         <label for="ibronze"> Broze</label><br>
-         <input type="radio" name="elo" id="iprata" checked>
-         <label for="iprata"> Prata</label><br>
-         <input type="radio" name="elo" id="iouro">
-         <label for="iouro"> Ouro</label><br>
-         <input type="radio" name="elo" id="iplat">
-         <label for="iplat"> Platina</label><br>
-         <input type="radio" name="elo" id="idima">
-         <label for="idima"> Diamante</label><br>
-         <input type="radio" name="elo" id="imst">
-         <label for="imst"> Mestre</label><br>
-         <input type="radio" name="elo" id="igrao">
-         <label for="igrao"> Grã-Mestre</label><br>
-         <input type="radio" name="elo" id="ides">
-         <label for="ides"> Desafiante</label><br>
+    <legend> Elo</legend>
+    <ol>
+        
+             <li>
+                 
+                 <label><input type="radio" name="elo" id="iferro"> Ferro</label><br>
+             </li>
+             <li>
+                 
+                 <label><input type="radio" name="elo" id="ibronze"> Broze</label><br>
+             </li>
+             <li>
+                 
+                 <label><input type="radio" name="elo" id="iprata" checked> Prata</label><br>
+             </li>
+             <li>
+                 
+                 <label><input type="radio" name="elo" id="iouro"> Ouro</label><br>
+             </li>
+             <li>
+                 
+                 <label><input type="radio" name="elo" id="iplat"> Platina</label><br>
+             </li>
+             <li>
+                 
+                 <label><input type="radio" name="elo" id="idima"> Diamante</label><br>
+             </li>
+             <li>
+                 <input type="radio" name="elo" id="imst">
+                 <label for="imst"> Mestre</label><br>
+             </li>
+             <li>
+                 <input type="radio" name="elo" id="igrao">
+                 <label for="igrao"> Grã-Mestre</label><br>
+             </li>
+             <li>
+                 <input type="radio" name="elo" id="ides">
+                 <label for="ides"> Desafiante</label><br>
+             </li>
+    </ol>
      </fieldset>
      <!---------------------------------------FAZER UM CHILDREN DE FERRO A DIAMANTE (I A IV)------------------------------------- 
        ideia: if checked > children. 

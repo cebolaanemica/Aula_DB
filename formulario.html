@@ -22,7 +22,7 @@
 
 <body>
     <h1> Cadastre-se</h1>
-    <form action="formulário.php" method="post" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
     <!-- Inicio do formulário 
 action: para onde os dados das caixas vão
 method: o metodo de envio de dados
@@ -44,7 +44,11 @@ name: o nome da caixa
 id: a identificação unica da caixa
 type: o tipo da caixa de entrada
 placeholder: a dica do que escrever na caixa 
--->
+--> <p>
+            <label for="iemail">Email: </label>
+                <input type="email" name="email"
+                id="iemail" required>
+                </p>
     </p>
     <p>
                 <label for="itelefone">Telefone: </label>
@@ -61,11 +65,7 @@ placeholder: a dica do que escrever na caixa
                 <input type="text" name="cpf"
                 id="icpf" placeholder="000.000.000-00">
                 </p>
-            <p>
-            <label for="iemail">Email: </label>
-                <input type="email" name="email"
-                id="iemail" required>
-                </p>
+           
             <p>
             <label for="isenha">Senha: </label>
                 <input type="password" name="senha"
