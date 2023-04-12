@@ -1,0 +1,37 @@
+body {
+    background-color: rgba(67, 221, 152, 0.541);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titulo {
+    color: rgb(255, 210, 8);
+    text-align: center;
+}
+
+.user {
+    color: rgb(2, 10, 10);
+    background-color: rgb(20, 175, 175);
+    text-align: center;
+    padding: 12px;
+    border: none;
+    font-size: 10.5pt;
+    font-style: italic;
+}
+
+.enviar {
+    width: 100%;
+    color: rgba(41, 253, 207, 0.726);
+    background-color: rgb(16, 113, 204);
+    padding: 5px; border-radius: 10px;
+}
+
+.campo {
+    align-items: center;
+    border: unset;
+    align-content: center;
+    background-color:  rgb(2, 29, 24);
+    position: absolute;  top: 25%; left:35%;
+    padding: 90px; border-radius: 360px;
+    border: 10px; border-color: rgb(156, 180, 172);
+}
+
